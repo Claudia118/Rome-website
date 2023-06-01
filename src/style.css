@@ -65,9 +65,31 @@ header a {
   background-color: #fff;
   padding: 16px 32px;
 }
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+
+main {
+  background-color: #ebe4e0;
+}
+
+main h2 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #333230;
+  line-height: 50px;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333230;
+  line-height: 24px;
+  opacity: 0.7;
 }
 
 footer {
@@ -76,7 +98,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -86,7 +107,6 @@ footer h3 {
 
 footer p {
   font-size: 16px;
-  margin-right: 20px;
   line-height: 24px;
   opacity: 0.6;
 }
@@ -119,7 +139,15 @@ footer a {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 60px;
+}
+
+.main-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-grid{
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 960px) {

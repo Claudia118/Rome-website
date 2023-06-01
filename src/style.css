@@ -1,10 +1,69 @@
 :root {
   --primary-font: "Luxurious Roman", cursive; /* Only Headings*/
   --secondary-font: "Roboto", sans-serif; /*Paragraphs*/
+  --primary-color: #E4D3C9;
+  --btn-color: #78ADAD;
+  --text-color: #333230;
+}
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/rome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 286px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin: 0;
 }
 
 h1 {
-  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5px;
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 16px 32px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
 }

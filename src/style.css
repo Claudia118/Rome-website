@@ -73,7 +73,11 @@ section {
 }
 
 main {
-  background-color: #ebe4e0;
+  background-color: #e7e3e1;
+}
+
+main img {
+  width: 100%;
 }
 
 main h2 {
@@ -117,7 +121,6 @@ footer ul {
 }
 
 footer li {
-  color: red;
   font-size: 16px;
   line-height: 24px;
   opacity: 0.7;
@@ -146,8 +149,8 @@ footer a {
   grid-template-columns: 1fr 1fr;
 }
 
-.footer-grid{
-    grid-template-columns: 1fr 2fr 2fr;
+.footer-grid {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 960px) {
@@ -170,5 +173,14 @@ footer a {
   header a {
     font-size: 12px;
     padding: 10px 15px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 }
